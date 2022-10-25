@@ -8,6 +8,11 @@ variable "aws_account_ids" {
   default = null
 }
 
+variable "vpc_cidr_block" {
+  type = string
+  default = "172.33.0.0/16"
+}
+
 variable "public_subnet_cidr_blocks" {
   type = list
   default = [
